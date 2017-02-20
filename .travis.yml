@@ -1,14 +1,7 @@
-language: java
 sudo: required
-os:
-  - linux
-  
 dist: trusty
-
-env:
-  - GOARCH=amd64
-sudo: false
+language: java
 script:
-  - ./setup-chroot -a -b
+  - sudo ./setup-chroot -a -b
 notifications:
   email: false
