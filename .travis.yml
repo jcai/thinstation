@@ -1,0 +1,13 @@
+language: java
+os:
+  - linux
+  
+dist: trusty
+
+env:
+  - GOARCH=amd64
+sudo: false
+script:
+  - ./setup-chroot -a -b
+notifications:
+  email: false
